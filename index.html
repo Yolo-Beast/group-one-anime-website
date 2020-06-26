@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="stylesheet" href="pg-specific-stylesheets\index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap">
+    <title>
+        AnimeCentral
+    </title>
+</head>
+
+<body class="mainpg-wrap">
+    <div class="pgwrapper-backgrnd" id="pgwrapper-backgrnd-index">
+        <header class="main-head">
+            <div class="logo-div">
+
+            </div>
+            <div class="animecentral-title">
+                <h1>
+                    AnimeCentral
+                </h1>
+            </div>
+            <div class="nav-bar-div">
+                <nav class="nav-bar">
+                    <div class="nav-options">
+                        <form method="get" action="index.html">
+                            <button class="btn home-btn" type="submit">HOME</button>
+                        </form>
+
+                        <form method="get" action="subpages/hot-pg.html">
+                            <button class="btn hot-btn" type="submit">HOT</button>
+                        </form>
+
+                        <form method="get" action="subpages/recent-pg.html">
+                            <button class="btn recent-btn" type="submit">RECENT</button>
+                        </form>
+
+                        <form method="get" action="subpages/help-pg.html">
+                            <button class="btn help-btn" type="submit">HELP</button>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main-section">
+            <article id="frontpg-content">
+                <section id="frontpg-introduction">                
+                    <img src="https://cdn.discordapp.com/attachments/677255897134792748/726080321556054036/anime_girl_waving_hello.png"
+                    alt="Hello! :)" id="frontpg-intro-pic">
+                    <p>
+                        Welcome! AnimeCentral, the center of anime information and knowledge! Here you can find
+                        everything you want about
+                        the most popular and hot anime here, and also great recently released anime if you're
+                        finding more things
+                        to bing watch!
+                    </p>
+                </section>
+                <section id="frontpg-hot-section">
+                    <button class="collapsible-frontpg-section">Hot and Popular Anime</button>
+                    <div id="hot-anime-list-div" class="frontpg-collapsible-content">
+                        <ul style="list-style-type:none;">
+                            <li>
+                                Death Note
+                            </li>
+                            <li>
+                                Shingeki no Kyojin
+                            </li>
+                            <li>
+                                Sword Art Online
+                            </li>
+                            <li>
+                                Fullmetal Alchemist : Brotherhood
+                            </li>
+                            <li>
+                                One Punch Man
+                            </li>
+                            <li>
+                                Tokyo Ghoul
+                            </li>
+                            <li>
+                                Steins;Gate
+                            </li>
+                            <li>
+                                Naruto
+                            </li>
+                            <li>
+                                No Game No Life
+                            </li>
+                            <li>
+                                Boku no Hero Academia
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="frontpg-recent-section">
+                    <button class="collapsible-frontpg-section">Recently Released Anime</button>
+                    <div id="recent-anime-list-div" class="frontpg-collapsible-content">
+                        <ul style="list-style-type:none;">
+                            <li>
+                                Death Note
+                            </li>
+                            <li>
+                                Shingeki no Kyojin
+                            </li>
+                            <li>
+                                Sword Art Online
+                            </li>
+                            <li>
+                                Fullmetal Alchemist : Brotherhood
+                            </li>
+                            <li>
+                                One Punch Man
+                            </li>
+                            <li>
+                                Tokyo Ghoul
+                            </li>
+                            <li>
+                                Steins;Gate
+                            </li>
+                            <li>
+                                Naruto
+                            </li>
+                            <li>
+                                No Game No Life
+                            </li>
+                            <li>
+                                Boku no Hero Academia
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+    </div>
+    </main>
+    </div>
+    <div class="footer-div">
+        <footer>
+            <div class="footer-txt-div">
+                <p class="footer-txt">
+                    <strong>Contact Us</strong><br>
+                    Phone: 0987865436789<br>
+                    Email: AnimeCentral@gmail.com
+                </p>
+                <p class="footer-txt1">
+                    <strong>About Us</strong><br>
+                    We made this because we love anime and we want to help you to enjoy it too!
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible-frontpg-section");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
